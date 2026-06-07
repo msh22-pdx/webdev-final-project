@@ -233,3 +233,65 @@ section h2 {
   background-color: #999;
   opacity: 0.7;
 }
+
+.custom-accordion {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.custom-accordion summary {
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.custom-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-accordion summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: #4caf50;
+  line-height: 1;
+}
+
+.custom-accordion[open] summary::after {
+  content: "-";
+}
+
+.accordion-content {
+  padding: 1rem 1rem 1rem 2rem;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
+#site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+#site-footer p {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #4caf50;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.social-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
